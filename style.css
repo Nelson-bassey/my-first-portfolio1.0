@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 100%;
+    background-color: #fff;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 4rem;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+nav h1{
+    color: orangered;
+    text-decoration: underline;
+}
+
+ul, li a{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: orangered;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: scale(0.5rem);
+}
+/* this is the end of the header  style */
+
+/* the begining of the homepage  */
+
+.homepage{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 1.5rem;
+    height: 15%;
+    align-items: center;
+}
+.text{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    width: 45%;
+    padding: 1rem;
+    padding-top: 2.5rem;
+}
+.homepage p{
+    font-size: 20px;
+    width: 100%;
+}
+.img-container{
+    width: 45%;
+    justify-items: center;
+    padding: 1.5rem;
+}
+
+span{
+    color: orangered;
+}
+
+.image{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: 3px solid orangered;
+    border-style: dashed;
+    justify-self: center;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.image:hover{
+    transform: scaleX(1.5rem);
+    cursor: pointer;
+    max-width: max-content;
+}
+
+.home_btn{
+    display: flex;
+    gap:  10rem;
+    justify-content: center;
+}
+.btn{
+    padding-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 8.5rem;
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #666;
+    color: #ff4500;
+}
+
+@media (max-width: 600px){
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .homepage, img{
+        /* display: flex; */
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100vw;
+    }
+    .text{
+        width: 100%;
+        font-size: normal;
+        padding-top: 0;
+    }
+    .btn{
+        flex-direction: row;
+        justify-self: center; 
+        padding-bottom: 2rem;
+    }
+    header{
+        justify-items: center;
+        padding: 0;
+        background: none;
+        margin: 0;
+    }
+    .links{
+        display: none;
+    }
+    .btn_1{
+        align-self: left;
+        font-weight: bold;
+    }
+    .btn_2{
+        align-self: right;
+        font-weight: bold;
+    }
+    
+}
